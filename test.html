@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Hart Industries</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section id="product-cards" class="container">
+      <div class="row" id="product-row">
+        <!-- Product cards will be dynamically added here -->
+      </div>
+    </section>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      const products = [
+        {
+          name: "Jerry Can 18L",
+          imgSrc:
+            "../assets/img/portfolio/jerry-cans/18-ltr-jerry-can--web.png",
+          sizes: ["S", "M", "L"],
+          colors: [
+            {
+              imgSrc:
+                "../assets/img/portfolio/jerry-cans/18-ltr-jerry-can--web.png",
+              className: "amber-swatch inner-shadow-dark",
+            },
+            {
+              imgSrc:
+                "../assets/img/portfolio/jerry-cans/2-ltr-cross-neck--web.png",
+              className: "purple-swatch inner-shadow-light",
+            },
+            {
+              imgSrc:
+                "../assets/img/portfolio/jerry-cans/5-ltr-jerry-can--web.png",
+              className: "orange-swatch inner-shadow-dark",
+            },
+          ],
+        },
+        // Add more products here...
+      ];
+
+      products.forEach((product) => createProductCard(product));
+      initProductCards();
+
+      function createProductCard({ name, imgSrc, sizes, colors }) {
+        const card = document.createElement("div");
+        card.classList.add("col-sm-6", "col-md-4", "col-lg-3");
+        card.innerHTML = `
+          <div class="card">
+            <img src="${imgSrc}" class="card-img-top product-img" alt="${name}">
+            <div class="card-body">
+              <h5 class="card-title">${name}</h5>
+              <div class="d-flex justify-content-between">
+                <div class="size-options">
+                  ${sizes.map((size) => `<span>${size}</span>`).join("")}
+                </div>
+                <fieldset class="color-selection">
+                  <div class="color-swatches">
+                    ${colors
+                      .map(
+                        (color, index) => `
+                      <div class="swatch">
+                        <input type="radio" id="color${index}-${name}" name="color-${name}" value="color${index}" data-img-src="${color.imgSrc}">
+                        <label for="color${index}-${name}" class="${color.className}"></label>
+                      </div>`
+                      )
+                      .join("")}
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        `;
+        document.getElementById("product-row").appendChild(card);
+      }
+
+      function initProductCards() {
+        const cards = document.querySelectorAll(".card");
+        cards.forEach((card) => {
+          const image = card.querySelector(".product-img");
+          const colorOptions = card.querySelectorAll(
+            '.color-swatches input[type="radio"]'
+          );
+          colorOptions.forEach((option) => {
+            option.addEventListener("change", () => {
+              if (option.checked) {
+                image.src = option.getAttribute("data-img-src");
+                resetOutlineColors(card);
+                setOutlineColor(option);
+              }
+            });
+          });
+          checkInitialColor(image, colorOptions); // Ensure correct radio button is checked initially
+        });
+      }
+
+      function checkInitialColor(image, colorOptions) {
+        const imageFileName = image.src.split("/").pop(); // Get the image file name
+        colorOptions.forEach((option) => {
+          const optionFileName = option
+            .getAttribute("data-img-src")
+            .split("/")
+            .pop(); // Get the option image file name
+          if (imageFileName === optionFileName) {
+            option.checked = true;
+            setOutlineColor(option); // Set the initial outline color
+          }
+        });
+      }
+
+      function resetOutlineColors(card) {
+        const labels = card.querySelectorAll(".color-swatches label");
+        labels.forEach((label) => {
+          label.style.outlineColor = "transparent";
+        });
+      }
+
+      function setOutlineColor(option) {
+        const label = option.nextElementSibling;
+        const bgColor = window.getComputedStyle(label).backgroundColor;
+        label.style.outlineColor = bgColor;
+      }
+    </script>
+  </body>
+</html>
+
+<!-- productRow.addEventListener('change', (event) => {
+//     const selectedSwatch = event.target;
+//     if (selectedSwatch.tagName === 'INPUT' && selectedSwatch.type === 'radio') {
+//       const newImgSrc = selectedSwatch.getAttribute('data-img-src');
+//       const imgElement = selectedSwatch.closest('.card').querySelector('.product-img');
+//       if (imgElement) {
+//         imgElement.src = newImgSrc;
+//       } else {
+//         console.error('Image element not found');
+//       } -->

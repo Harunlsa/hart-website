@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products / Jerry Cans</title>
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Syne:700"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="../assets//css/style.css" rel="stylesheet" />
+  </head>
+
+  <body id="products-page">
+    <!-- Header and Top Bar -->
+    <div id="header-placeholder"></div>
+
+    <!-- ======= Banner ======= -->
+    <section id="product-banner">
+      <div class="container">
+        <div class="row h-100 align-items-center">
+          <div class="col-md-7 left-col">
+            <h1>Jerry Cans</h1>
+            <p>
+              Safe and sturdy jerry cans for transporting liquids, available in
+              various sizes to suit your needs.
+            </p>
+          </div>
+          <div class="col-md-5 right-col text-right">
+            <img
+              src="../assets/img/portfolio/jerry-cans/jerry-can-group.png"
+              alt="Jerry Cans"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Banner -->
+
+    <!-- Breadcrumb and Filter Section -->
+    <section class="breadcrumb-filter-section">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="#">Products</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Jerry Cans
+              </li>
+            </ol>
+          </nav>
+          <div>
+            <select class="form-control" id="categoryFilter">
+              <option value="all">Select Category</option>
+              <option value="jerry-cans">Jerry Cans</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="product-cards" class="container">
+      <div class="row" id="product-row">
+        <!-- Product cards will be dynamically added here -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Script to load header and footer -->
+    <script>
+      // Function to load HTML content
+      function loadHTML(file, elementId) {
+        fetch(file)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById(elementId).innerHTML = data;
+            if (elementId === "header-placeholder") {
+              reinitializeMobileNavToggle();
+            }
+          })
+          .catch((error) => console.error("Error loading HTML:", error));
+      }
+
+      // Load header and footer
+      loadHTML("../header.html", "header-placeholder");
+      loadHTML("../footer.html", "footer-placeholder");
+
+      // Function to reinitialize mobile nav toggle
+      function reinitializeMobileNavToggle() {
+        const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+        const navbar = document.querySelector("#navbar");
+
+        mobileNavToggle.addEventListener("click", function () {
+          navbar.classList.toggle("navbar-mobile");
+          this.classList.toggle("bi-list");
+          this.classList.toggle("bi-x");
+        });
+      }
+    </script>
+    <!-- Script to add product cards -->
+    <script>
+      const basePath = "../assets/img/portfolio/jerry-cans/";
+      const products = [
+        {
+          name: "Jerry Can",
+          imgSrc: "18-ltr-jerry-can--web.png",
+          sizes: ["10L", "18L", "20L"],
+          colors: [
+            {
+              imgSrc: "18-ltr-jerry-can--web.png",
+              className: "amber-swatch inner-shadow-dark",
+            },
+          ],
+        },
+        {
+          name: "Jerry Can 4L",
+          imgSrc: "4-ltr-jerry-can-plan--web.png",
+          sizes: ["S", "M", "L"],
+          colors: [
+            {
+              imgSrc: "4-ltr-jerry-can-plan--web.png",
+              className: "white-swatch inner-shadow-dark",
+            },
+          ],
+        },
+        // Add more products here...
+      ];
+
+      products.forEach((product) => createProductCard(product));
+      initProductCards();
+
+      function createProductCard({ name, imgSrc, sizes, colors }) {
+        const card = document.createElement("div");
+        card.classList.add("col-sm-6", "col-md-4", "col-lg-3");
+        card.innerHTML = `
+            <div class="card">
+              <img src="${
+                basePath + imgSrc
+              }" class="card-img-top product-img" alt="${name}">
+              <div class="card-body">
+                <h5 class="card-title">${name}</h5>
+                <div class="d-flex justify-content-between">
+                  <div class="size-options">
+                    ${sizes.map((size) => `<span>${size}</span>`).join("")}
+                  </div>
+                  <fieldset class="color-selection">
+                    <div class="color-swatches">
+                      ${colors
+                        .map(
+                          (color, index) => `
+                        <div class="swatch">
+                          <input type="radio" id="color${index}-${name}" name="color-${name}" value="color${index}" data-img-src="${
+                            basePath + color.imgSrc
+                          }">
+                          <label for="color${index}-${name}" class="${
+                            color.className
+                          }"></label>
+                        </div>`
+                        )
+                        .join("")}
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          `;
+        document.getElementById("product-row").appendChild(card);
+      }
+
+      function initProductCards() {
+        const cards = document.querySelectorAll(".card");
+        cards.forEach((card) => {
+          const image = card.querySelector(".product-img");
+          const colorOptions = card.querySelectorAll(
+            '.color-swatches input[type="radio"]'
+          );
+          colorOptions.forEach((option) => {
+            option.addEventListener("change", () => {
+              if (option.checked) {
+                image.src = option.getAttribute("data-img-src");
+                resetOutlineColors(card);
+                setOutlineColor(option);
+              }
+            });
+          });
+          checkInitialColor(image, colorOptions); // Ensure correct radio button is checked initially
+        });
+      }
+
+      function checkInitialColor(image, colorOptions) {
+        const imageFileName = image.src.split("/").pop(); // Get the image file name
+        colorOptions.forEach((option) => {
+          const optionFileName = option
+            .getAttribute("data-img-src")
+            .split("/")
+            .pop(); // Get the option image file name
+          if (imageFileName === optionFileName) {
+            option.checked = true;
+            setOutlineColor(option); // Set the initial outline color
+          }
+        });
+      }
+
+      function resetOutlineColors(card) {
+        const labels = card.querySelectorAll(".color-swatches label");
+        labels.forEach((label) => {
+          label.style.outlineColor = "transparent";
+        });
+      }
+
+      function setOutlineColor(option) {
+        const label = option.nextElementSibling;
+        const bgColor = window.getComputedStyle(label).backgroundColor;
+
+        // Check if the background color is white
+        if (bgColor === "rgb(255, 255, 255)") {
+          label.style.outlineColor = "grey"; // Set to grey for white swatches
+        } else {
+          label.style.outlineColor = bgColor;
+        }
+      }
+    </script>
+    <script src="../categoryFilter.js"></script>
+  </body>
+</html>
