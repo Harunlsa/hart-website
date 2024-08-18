@@ -2072,17 +2072,20 @@ section {
 /* Contact page */
 #contact-banner {
   height: 326px;
-  background: rgb(234, 234, 234);
-  background: linear-gradient(
+  background: url(../img/contact-banner.png);
+  background-size: cover;
+  position: relative;
+  /* background: linear-gradient(
     90deg,
     rgba(234, 234, 234, 1) 12%,
     rgba(213, 255, 255, 1) 60%,
     rgba(194, 255, 251, 0.9220063025210083) 75%,
     rgba(65, 223, 255, 0.6054796918767507) 100%
-  );
+  ); */
   text-align: center;
   display: flex;
   align-items: center;
+  /* outline: 2px solid black; */
 }
 .get-in-touch ul {
   list-style: none;
@@ -2103,7 +2106,7 @@ section {
   position: absolute;
   /* top: 0; */
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   height: 382px;
   background-color: #353b44;
   z-index: 10;
