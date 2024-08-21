@@ -43,9 +43,6 @@
   </head>
 
   <body id="products-page">
-    <!-- Header and Top Bar -->
-    <div id="header-placeholder"></div>
-
     <!-- ======= Banner ======= -->
     <section id="product-banner" class="racks">
       <div class="container">
@@ -76,7 +73,11 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item"><a href="#">Products</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
+              <li
+                class="breadcrumb-item active"
+                id="breadcrumb-active"
+                aria-current="page"
+              >
                 Jerry Cans
               </li>
             </ol>
@@ -284,6 +285,5 @@
       }
     </script>
     <script src="../categoryFilter.js"></script>
-  
-</body>
+  </body>
 </html>

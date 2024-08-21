@@ -48,96 +48,8 @@
   </head>
 
   <body>
-    <!-- ======= Top Bar ======= -->
-    <section id="topbar" class="d-flex align-items-center">
-      <div
-        class="container d-flex justify-content-center justify-content-md-between"
-      >
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"
-            ><a href="mailto:contact@example.com"
-              >sales@hartindustries.com</a
-            ></i
-          >
-          <i class="bi bi-phone d-flex align-items-center ms-4"
-            ><a href="tel:+2347025596606"><span>+234 702 559 6606</span></a></i
-          >
-        </div>
-        <!-- <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div> -->
-      </div>
-    </section>
-
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="container d-flex align-items-center">
-          <a href="#hero" class="logo"
-            ><img src="assets/img/hart_logo.png" alt="logo"
-          /></a>
-          <h1 class="logo">
-            <a href="index.html">Hart Industries<!-- <span>.</span> --></a>
-          </h1>
-        </div>
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li>
-              <a class="nav-link scrollto active" href="#hero">Home</a>
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="#about">About Us</a>
-            </li>
-            <!-- <li>
-              <a class="nav-link scrollto" href="products.html">Products</a>
-            </li> -->
-            <li class="dropdown">
-              <a href="products.html"
-                ><span>Products</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#">Baby Sets</a></li>
-                <!-- <li class="dropdown">
-                  <a href="#"
-                    ><span>Deep Drop Down</span>
-                    <i class="bi bi-chevron-right"></i
-                  ></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li> -->
-                <li><a href="#">Basins</a></li>
-                <li><a href="#">Baskets</a></li>
-                <li><a href="#">Bowls</a></li>
-                <li><a href="#">Buckets</a></li>
-                <li><a href="#">Colanders & Plates</a></li>
-                <li><a href="#">Coolers</a></li>
-                <li><a href="#">Drums</a></li>
-                <li><a href="#">Ice Cream Containers</a></li>
-                <li><a href="products/jerry-cans.html">Jerry Cans</a></li>
-                <li><a href="#">Mugs & Cups</a></li>
-                <li><a href="#">Racks</a></li>
-                <li><a href="#">Take Away Containers</a></li>
-                <li><a href="#">Toys</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
-      </div>
-    </header>
-    <!-- End Header -->
+    <!-- Header and Top Bar -->
+    <div id="header-placeholder"></div>
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
@@ -1520,6 +1432,37 @@
       class="back-to-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+    <!-- Script to load header and footer -->
+    <script>
+      // Function to load HTML content
+      function loadHTML(file, elementId) {
+        fetch(file)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById(elementId).innerHTML = data;
+            if (elementId === "header-placeholder") {
+              reinitializeMobileNavToggle();
+            }
+          })
+          .catch((error) => console.error("Error loading HTML:", error));
+      }
+
+      // Load header and footer
+      loadHTML("../header.html", "header-placeholder");
+      loadHTML("../footer.html", "footer-placeholder");
+
+      // Function to reinitialize mobile nav toggle
+      function reinitializeMobileNavToggle() {
+        const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+        const navbar = document.querySelector("#navbar");
+
+        mobileNavToggle.addEventListener("click", function () {
+          navbar.classList.toggle("navbar-mobile");
+          this.classList.toggle("bi-list");
+          this.classList.toggle("bi-x");
+        });
+      }
+    </script>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

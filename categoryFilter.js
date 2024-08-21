@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   var select = document.getElementById("categoryFilter");
+  var breadcrumbActive = document.getElementById("breadcrumb-active");
 
   // Get the current URL and extract the current category
   var currentUrl = window.location.href;
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     option.text = category.text;
     if (category.value === currentCategory) {
       option.selected = true;
+      breadcrumbActive.textContent = category.text;
     }
     select.appendChild(option);
   });
