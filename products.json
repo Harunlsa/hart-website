@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "name": "18L Jerry Can",
+      "imgSrc": "18-ltr-jerry-can--web.png",
+      "sizes": ["10L", "18L", "20L"],
+      "colors": [
+        {
+          "imgSrc": "18-ltr-jerry-can--web.png",
+          "className": "amber-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "jerry-cans"
+    },
+    {
+      "name": "4L Jerry Can Plan",
+      "imgSrc": "4-ltr-jerry-can-plan--web.png",
+      "sizes": ["S", "M", "L"],
+      "colors": [
+        {
+          "imgSrc": "4-ltr-jerry-can-plan--web.png",
+          "className": "white-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "jerry-cans"
+    },
+    {
+      "name": "Kitchen Rack Set",
+      "imgSrc": "kitchen-rack-set.png",
+      "sizes": [""],
+      "colors": [
+        {
+          "imgSrc": "kitchen-rack-set.png",
+          "className": "blue-swatch inner-shadow-dark"
+        },
+        {
+          "imgSrc": "kitchen-rack-set-g.png",
+          "className": "bright-green-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "racks"
+    },
+    {
+      "name": "Office / Paper Rack Set",
+      "imgSrc": "office-paper-rack-set.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "office-paper-rack-set.png",
+          "className": "pink-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "racks"
+    },
+    {
+      "name": "Shoe Rack Set",
+      "imgSrc": "shoe-rack-set.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "shoe-rack-set.png",
+          "className": "blue-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "racks"
+    }
+  ]
+}
