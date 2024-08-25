@@ -9,8 +9,8 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="assets/img/hart-favicon.png" rel="icon" />
+    <link href="assets/img/hart-favicon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -52,20 +52,27 @@
     <div id="header-placeholder"></div>
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <h1>Welcome to <span>Hart Industries</span></h1>
-        <h2>Leading the way in plastic manufacturing and innovation</h2>
-        <div class="d-flex">
-          <a href="#products" class="btn-get-started scrollto"
-            >Explore Products</a
-          >
-          <!-- <a
-                        href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
-                        class="glightbox btn-watch-video"
-                        ><i class="bi bi-play-circle"></i
-                        ><span>Watch Video</span></a
-                    > -->
+    <section id="hero" class="d-flex align-items-center hero-slider container">
+      <div
+        class="row hero"
+        data-aos="zoom-out"
+        data-aos-delay="100"
+        style="background-image: url(assets/img/bg-hero/bg-hero-racks.png)"
+      >
+        <div class="col-lg-7">
+          <h1>Organise with versatile <span class="text-green">Racks</span></h1>
+          <h2>
+            Durable and flexible plastic racks perfect for effficient storage
+            and organisation in any setting.
+          </h2>
+          <div class="d-flex">
+            <a href="#products" class="btn-get-started scrollto"
+              >Explore Racks</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <img src="./assets/img/portfolio/racks/racks-group.png" alt="" />
         </div>
       </div>
     </section>
@@ -1448,8 +1455,8 @@
       }
 
       // Load header and footer
-      loadHTML("hart-website/../header.html", "header-placeholder");
-      loadHTML("hart-website/../footer.html", "footer-placeholder");
+      loadHTML("./header.html", "header-placeholder");
+      loadHTML("./footer.html", "footer-placeholder");
 
       // Function to reinitialize mobile nav toggle
       function reinitializeMobileNavToggle() {
