@@ -13,6 +13,12 @@
     <link href="assets/img/hart-favicon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
@@ -52,7 +58,71 @@
     <div id="header-placeholder"></div>
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center hero-slider container">
+    <section id="hero">
+      <div class="hero-slider">
+        <div class="slides container-fluid">
+          <div
+            class="slide active row"
+            style="
+              background-image: url('https://github.com/Harunlsa/hart-website/blob/master/assets/img/bg-hero/bg-hero-racks.png?raw=true');
+            "
+          >
+            <div class="slide-content col-md-8">
+              <h1>Racks</h1>
+              <p>
+                Durable and flexible plastic racks perfect for efficient storage
+                and organization in any setting.
+              </p>
+              <button class="cta-button">Learn More</button>
+            </div>
+            <div class="col-md-4 align-items-right text-right">
+              <img
+                src="https://github.com/Harunlsa/hart-website/blob/master/assets/img/portfolio/racks/racks-group.png?raw=true"
+                alt="Racks"
+              />
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1724092997539-4793b090b94b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D');
+            "
+          >
+            <div class="slide-content">
+              <h1>Slide 2</h1>
+              <p>Content for Slide 2.</p>
+              <button class="cta-button">Learn More</button>
+            </div>
+            <img src="assets/img/products/slide2.png" alt="Slide 2 Image" />
+          </div>
+          <div
+            class="slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1724271364158-aa8baa615cf0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D');
+            "
+          >
+            <div class="slide-content">
+              <h1>Slide 3</h1>
+              <p>Content for Slide 3.</p>
+              <button class="cta-button">Learn More</button>
+            </div>
+            <img src="assets/img/products/slide3.png" alt="Slide 3 Image" />
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="prev"></button>
+          <button class="next"></button>
+        </div>
+
+        <div class="indicators">
+          <div class="indicator active"></div>
+          <div class="indicator"></div>
+          <div class="indicator"></div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="hero" class="d-flex align-items-center hero-slider container">
       <div
         class="row hero"
         data-aos="zoom-out"
@@ -75,7 +145,7 @@
           <img src="./assets/img/portfolio/racks/racks-group.png" alt="" />
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- <img src="assets/img/bg-hero/bg-hero-racks.svg" alt="hero" class="hero" /> -->
     <!-- End Hero -->
 
