@@ -64,59 +64,97 @@
           <div
             class="slide active row"
             style="
-              background-image: url('https://github.com/Harunlsa/hart-website/blob/master/assets/img/bg-hero/bg-hero-racks.png?raw=true');
+              background-image: url('assets/img/bg-hero/bg-hero-green.png');
             "
           >
-            <div class="slide-content col-md-8">
-              <h1>Racks</h1>
+            <div class="slide-content col-md-7">
+              <h1>
+                Organise with Versatile <span class="text-green">Racks</span>
+              </h1>
               <p>
                 Durable and flexible plastic racks perfect for efficient storage
                 and organization in any setting.
               </p>
-              <button class="cta-button">Learn More</button>
+              <a href="/products/racks.html" class="cta-button">View More</a>
             </div>
-            <div class="col-md-4 align-items-right text-right">
+            <div class="col-md-5 slide-image">
               <img
-                src="https://github.com/Harunlsa/hart-website/blob/master/assets/img/portfolio/racks/racks-group.png?raw=true"
+                src="assets/img/portfolio/racks/racks-group.png"
                 alt="Racks"
               />
             </div>
           </div>
           <div
-            class="slide"
-            style="
-              background-image: url('https://images.unsplash.com/photo-1724092997539-4793b090b94b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D');
-            "
+            class="slide row"
+            style="background-image: url('assets/img/bg-hero/bg-hero-blue.png')"
           >
-            <div class="slide-content">
-              <h1>Slide 2</h1>
-              <p>Content for Slide 2.</p>
-              <button class="cta-button">Learn More</button>
+            <div class="slide-content col-md-7">
+              <h1>
+                Efficient and Reliable <span class="text-blue">Coolers</span>
+              </h1>
+              <p>
+                Keep your items fresh and cool with our high-performance plastic
+                coolers, ideal for all occasions.
+              </p>
+              <button class="cta-button">View More</button>
             </div>
-            <img src="assets/img/products/slide2.png" alt="Slide 2 Image" />
+            <div class="col-md-5 slide-image">
+              <img
+                src="assets/img/portfolio/coolers/coolers6.png"
+                alt="Coolers"
+              />
+            </div>
           </div>
           <div
-            class="slide"
+            class="slide row"
+            style="background-image: url('assets/img/bg-hero/bg-hero-blue.png')"
+          >
+            <div class="slide-content col-md-7">
+              <h1>
+                Efficient and Reliable <span class="text-blue">Coolers</span>
+              </h1>
+              <p>
+                Keep your items fresh and cool with our high-performance plastic
+                coolers, ideal for all occasions
+              </p>
+              <button class="cta-button">View More</button>
+            </div>
+            <div class="col-md-5 slide-image">
+              <img
+                src="assets/img/portfolio/coolers/coolers6.png"
+                class="cooler"
+                alt="Slide 2 Image"
+              />
+            </div>
+          </div>
+          <div
+            class="slide row"
             style="
-              background-image: url('https://images.unsplash.com/photo-1724271364158-aa8baa615cf0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D');
+              background-image: url('assets/img/bg-hero/bg-hero-yellow.png');
             "
           >
-            <div class="slide-content">
-              <h1>Slide 3</h1>
-              <p>Content for Slide 3.</p>
-              <button class="cta-button">Learn More</button>
+            <div class="slide-content col-md-7">
+              <h1>High-Quality <span class="text-yellow">Jerry Cans</span></h1>
+              <p>
+                Safe and sturdy jerry cans for transporting liquids, available
+                in various sizes to suit your needs.
+              </p>
+              <button class="cta-button">View More</button>
             </div>
-            <img src="assets/img/products/slide3.png" alt="Slide 3 Image" />
+            <div class="col-md-5 slide-image">
+              <img src="assets/img/products/slide3.png" alt="Slide 3 Image" />
+            </div>
           </div>
         </div>
 
-        <div class="controls">
-          <button class="prev"></button>
-          <button class="next"></button>
-        </div>
+        <!-- <div class="controls"> -->
+        <button class="prev"></button>
+        <button class="next"></button>
+        <!-- </div> -->
 
         <div class="indicators">
           <div class="indicator active"></div>
+          <div class="indicator"></div>
           <div class="indicator"></div>
           <div class="indicator"></div>
         </div>
@@ -158,6 +196,9 @@
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon">
+                  <i class="bx bx-file"></i>
+                </div>
                 <h4 class="title">
                   <a href="">Competitive Pricing</a>
                 </h4>
@@ -1510,7 +1551,7 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
     <!-- Script to load header and footer -->
-    <script>
+    <script defer>
       // Function to load HTML content
       function loadHTML(file, elementId) {
         fetch(file)
@@ -1539,6 +1580,55 @@
           this.classList.toggle("bi-x");
         });
       }
+    </script>
+    <!-- Slider script -->
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slides = document.querySelectorAll(".slide");
+        const nextBtn = document.querySelector(".next");
+        const prevBtn = document.querySelector(".prev");
+        const indicators = document.querySelectorAll(".indicator");
+        let currentIndex = 0;
+
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.remove("active");
+            if (i === index) {
+              slide.classList.add("active");
+            }
+          });
+          indicators.forEach((indicator, i) => {
+            indicator.classList.toggle("active", i === index);
+          });
+          const offset = -index * 100;
+          document.querySelector(
+            ".slides"
+          ).style.transform = `translateX(${offset}%)`;
+        }
+
+        nextBtn.addEventListener("click", () => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
+        });
+
+        prevBtn.addEventListener("click", () => {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          showSlide(currentIndex);
+        });
+
+        indicators.forEach((indicator, i) => {
+          indicator.addEventListener("click", () => {
+            currentIndex = i;
+            showSlide(currentIndex);
+          });
+        });
+
+        // Auto-slide functionality
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
+        }, 10000);
+      });
     </script>
 
     <!-- Vendor JS Files -->
