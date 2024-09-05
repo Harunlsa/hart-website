@@ -59,7 +59,7 @@
 
     <!-- ======= Hero Section ======= -->
     <section id="hero">
-      <div class="hero-slider">
+      <div class="hero-slider" data-aos="zoom-out" data-aos-delay="100">
         <div class="slides container-fluid">
           <div
             class="slide active row"
@@ -160,31 +160,6 @@
         </div>
       </div>
     </section>
-    <!-- <section id="hero" class="d-flex align-items-center hero-slider container">
-      <div
-        class="row hero"
-        data-aos="zoom-out"
-        data-aos-delay="100"
-        style="background-image: url(assets/img/bg-hero/bg-hero-racks.png)"
-      >
-        <div class="col-lg-7">
-          <h1>Organise with versatile <span class="text-green">Racks</span></h1>
-          <h2>
-            Durable and flexible plastic racks perfect for effficient storage
-            and organisation in any setting.
-          </h2>
-          <div class="d-flex">
-            <a href="#products" class="btn-get-started scrollto"
-              >Explore Racks</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <img src="./assets/img/portfolio/racks/racks-group.png" alt="" />
-        </div>
-      </div>
-    </section> -->
-    <!-- <img src="assets/img/bg-hero/bg-hero-racks.svg" alt="hero" class="hero" /> -->
     <!-- End Hero -->
 
     <main id="main">
@@ -197,7 +172,7 @@
             >
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon">
-                  <i class="bx bx-file"></i>
+                  <i class="bx bx-cash-stack"></i>
                 </div>
                 <h4 class="title">
                   <a href="">Competitive Pricing</a>
@@ -671,7 +646,7 @@
       <!-- End Testimonials Section -->
 
       <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio">
+      <!-- <section id="portfolio" class="portfolio">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Products</h2>
@@ -924,7 +899,139 @@
             </div>
           </div>
         </div>
+      </section> -->
+      <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Products</h2>
+            <h3>Check our <span>Products</span></h3>
+            <p>
+              Explore our range of high-quality products designed to meet your
+              needs.
+            </p>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-baskets">Baskets</li>
+                <li data-filter=".filter-jerry-cans">Jerry Cans</li>
+                <li data-filter=".filter-racks">Racks</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-baskets">
+              <img
+                src="assets/img/portfolio/1-basket.png"
+                class="img-fluid"
+                alt="Basket Image 1"
+              />
+              <div class="portfolio-info">
+                <h4>Basket 1</h4>
+                <p>Baskets</p>
+                <a
+                  href="assets/img/portfolio/1-basket.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Basket 1"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-jerry-cans">
+              <img
+                src="assets/img/portfolio/jerry-cans/2-ltr-cross-neck--web.png"
+                class="img-fluid grey-background"
+                alt="Jerry Can Image 1"
+              />
+              <div class="portfolio-info">
+                <h4>Jerry Can 1</h4>
+                <p>Jerry Cans</p>
+                <a
+                  href="assets/img/portfolio/jerry-cans/2-ltr-cross-neck--web.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Jerry Can 1"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-racks">
+              <img
+                src="assets/img/portfolio/portfolio-2.jpg"
+                class="img-fluid"
+                alt="Rack Image 1"
+              />
+              <div class="portfolio-info">
+                <h4>Rack 1</h4>
+                <p>Racks</p>
+                <a
+                  href="assets/img/portfolio/portfolio-2.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Rack 1"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-racks">
+              <img
+                src="assets/img/portfolio/portfolio-2.jpg"
+                class="img-fluid"
+                alt="Rack Image 1"
+              />
+              <div class="portfolio-info">
+                <h4>Rack 1</h4>
+                <p>Racks</p>
+                <a
+                  href="assets/img/portfolio/portfolio-2.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Rack 1"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Repeat for other products -->
+          </div>
+        </div>
       </section>
+
       <!-- End Portfolio Section -->
 
       <!-- ======= Team Section ======= -->
