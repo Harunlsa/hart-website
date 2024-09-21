@@ -63,6 +63,782 @@
         }
       ],
       "category": "racks"
+    },
+    {
+      "name": "Benz basin",
+      "imgSrc": "benz-basin-13-ltrs--web.png",
+      "sizes": ["13L", "18L"],
+      "colors": [
+        {
+          "imgSrc": "benz-basin-13-ltrs--web.png",
+          "className": "dull-green-swatch inner-shadow-light"
+        },
+        {
+          "imgSrc": "benz-basin-18-ltrs--web.png",
+          "className": "purple-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Big sunny basin",
+      "imgSrc": "big-sunny-basin.--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "big-sunny-basin.--web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Butterfly basin",
+      "imgSrc": "butterfly-basin-16-ltrs--web.png",
+      "sizes": ["16L"],
+      "colors": [
+        {
+          "imgSrc": "butterfly-basin-16-ltrs--web.png",
+          "className": "pink-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Chinese basin",
+      "imgSrc": "chinese-basin-20-ltrs--web.png",
+      "sizes": ["20L"],
+      "colors": [
+        {
+          "imgSrc": "chinese-basin-20-ltrs--web.png",
+          "className": "blue-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Cute basin",
+      "imgSrc": "cute-basin-9-ltrs--web.png",
+      "sizes": ["9L"],
+      "colors": [
+        {
+          "imgSrc": "cute-basin-9-ltrs--web.png",
+          "className": "pink-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Diabmond basin",
+      "imgSrc": "diamond-basin-9-lt--web.png",
+      "sizes": ["7L", "9L"],
+      "colors": [
+        {
+          "imgSrc": "diamond-basin-9-lt--web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        },
+        {
+          "imgSrc": "diamond-basin-7-lt--web.png",
+          "className": "olive-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Dolphin basin",
+      "imgSrc": "dolphin-basin-9-ltrs--web.png",
+      "sizes": ["9L", "20L", "60L"],
+      "colors": [
+        {
+          "imgSrc": "dolphin-basin-9-ltrs--web.png",
+          "className": "orange-swatch inner-shadow-light"
+        },
+        {
+          "imgSrc": "dolphin-basin-32-ltrs--web.png",
+          "className": "blue-swatch inner-shadow-light"
+        },
+        {
+          "imgSrc": "dolphin-basin-60-ltrs--web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Dolphin basin gp",
+      "imgSrc": "dolphin-basin-gp--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "dolphin-basin-gp--web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Dolphin basin kampala",
+      "imgSrc": "dolphin-basin-kampala.--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "dolphin-basin-kampala.--web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Dolphin junior",
+      "imgSrc": "dolphin-junior.--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "dolphin-junior.--web.png",
+          "className": "pink-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Eagle basin",
+      "imgSrc": "eagle-basin-16-ltr--web.png",
+      "sizes": ["16L", "60L"],
+      "colors": [
+        {
+          "imgSrc": "eagle-basin-16-ltr--web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        },
+        {
+          "imgSrc": "eagle-basin-60-ltr--web.png",
+          "className": "olive-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Elephant basin",
+      "imgSrc": "elephant-basin-25-ltr--web.png",
+      "sizes": ["25L"],
+      "colors": [
+        {
+          "imgSrc": "elephant-basin-25-ltr--web.png",
+          "className": "orange-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Emeka basin",
+      "imgSrc": "emeka-basin-9-ltr--web.png",
+      "sizes": ["9L"],
+      "colors": [
+        {
+          "imgSrc": "emeka-basin-9-ltr--web.png",
+          "className": "black-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Fura basin",
+      "imgSrc": "fura-basin--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "fura-basin--web.png",
+          "className": "orange-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Harribino basin",
+      "imgSrc": "harribino-basin-17-ltrs--web.png",
+      "sizes": ["17L"],
+      "colors": [
+        {
+          "imgSrc": "harribino-basin-17-ltrs--web.png",
+          "className": "purple-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Hot cake basin",
+      "imgSrc": "hot-cake-basin-7-ltr--web.png",
+      "sizes": ["7L", "14L"],
+      "colors": [
+        {
+          "imgSrc": "hot-cake-basin-7-ltr--web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        },
+        {
+          "imgSrc": "hot-cake-basin-14-ltr--web.png",
+          "className": "purple-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Johny basin",
+      "imgSrc": "johny-basin.--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "johny-basin.--web.png",
+          "className": "bright-green-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Kano basin",
+      "imgSrc": "kano-basin-16-ltrs-kampala--web.png",
+      "sizes": ["16L"],
+      "colors": [
+        {
+          "imgSrc": "kano-basin-16-ltrs-kampala--web.png",
+          "className": "bright-green-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Lion basin",
+      "imgSrc": "lion-basin-15-ltrs--web.png",
+      "sizes": ["15L"],
+      "colors": [
+        {
+          "imgSrc": "lion-basin-15-ltrs--web.png",
+          "className": "bright-green-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "National basin",
+      "imgSrc": "national-basin-12-ltr.--web.png",
+      "sizes": ["12L", "22L"],
+      "colors": [
+        {
+          "imgSrc": "national-basin-12-ltr.--web.png",
+          "className": "blue-swatch inner-shadow-light"
+        },
+        {
+          "imgSrc": "national-basin-22-ltr--web.png",
+          "className": "black-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "New fruit basin",
+      "imgSrc": "new-fruit-basin-8-ltr--web.png",
+      "sizes": ["8L"],
+      "colors": [
+        {
+          "imgSrc": "new-fruit-basin-8-ltr--web.png",
+          "className": "grey-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Princess basin kampala",
+      "imgSrc": "princess-basin-kampala--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "princess-basin-kampala--web.png",
+          "className": "purple-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Rose basin",
+      "imgSrc": "rose-basin-7-ltr--web.png",
+      "sizes": ["7L"],
+      "colors": [
+        {
+          "imgSrc": "rose-basin-7-ltr--web.png",
+          "className": "black-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Round basin dansy",
+      "imgSrc": "round-basin-dansy.--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "round-basin-dansy.--web.png",
+          "className": "orange-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Round basin fancy",
+      "imgSrc": "round-basin-fancy-20-ltrs--web.png",
+      "sizes": ["20L"],
+      "colors": [
+        {
+          "imgSrc": "round-basin-fancy-20-ltrs--web.png",
+          "className": "purple-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Saminu basin",
+      "imgSrc": "saminu-basin--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "saminu-basin--web.png",
+          "className": "purple-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Square basin",
+      "imgSrc": "square-basin--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "square-basin--web.png",
+          "className": "dull-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Stripe basin",
+      "imgSrc": "stripe-basin-10-ltr--web.png",
+      "sizes": ["10L"],
+      "colors": [
+        {
+          "imgSrc": "stripe-basin-10-ltr--web.png",
+          "className": "purple-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Super fine basin",
+      "imgSrc": "super-fine-basin.--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "super-fine-basin.--web.png",
+          "className": "turquoise-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Super star basin",
+      "imgSrc": "super-star-basin-7-ltr--web.png",
+      "sizes": ["7L", "12L"],
+      "colors": [
+        {
+          "imgSrc": "super-star-basin-7-ltr--web.png",
+          "className": "dull-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Tiger basin kampala",
+      "imgSrc": "tiger-basin-5-ltr-kampala--web.png",
+      "sizes": ["5L", "13L", "14L", "40L"],
+      "colors": [
+        {
+          "imgSrc": "tiger-basin-5-ltr-kampala--web.png",
+          "className": "bright-green-swatch inner-shadow-dark"
+        },
+        {
+          "imgSrc": "tiger-basin-13ltr-kampala--web.png",
+          "className": "dull-green-swatch inner-shadow-light"
+        },
+        {
+          "imgSrc": "tiger-basin-14-ltrs-kampala--web.png",
+          "className": "pink-swatch inner-shadow-dark"
+        },
+        {
+          "imgSrc": "tiger-basin-40-ltr-gp--web.png",
+          "className": "black-swatch inner-shadow-light"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Wave basin",
+      "imgSrc": "wave-basin-60-ltrs--web.png",
+      "sizes": ["60L"],
+      "colors": [
+        {
+          "imgSrc": "wave-basin-60-ltrs--web.png",
+          "className": "pink-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "basins"
+    },
+    {
+      "name": "Africa bowl",
+      "imgSrc": "africa-bowl--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "africa-bowl--web.png",
+          "className": "pink-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Apple bowl",
+      "imgSrc": "apple-bowl--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "apple-bowl--web.png",
+          "className": "yellow-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Chinese bowl",
+      "imgSrc": "chinese-soup-bowl--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "chinese-soup-bowl--web.png",
+          "className": "orange-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Combo bowl",
+      "imgSrc": "combo-bowl-2lt--web.png",
+      "sizes": ["2L"],
+      "colors": [
+        {
+          "imgSrc": "combo-bowl-2lt--web.png",
+          "className": "red-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Desert bowl",
+      "imgSrc": "desert-bowl---web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "desert-bowl---web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Dolphin bowl",
+      "imgSrc": "dolphin-bowl-3ltr--web.png",
+      "sizes": ["3L"],
+      "colors": [
+        {
+          "imgSrc": "dolphin-bowl-3ltr--web.png",
+          "className": "blue-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "England bowl",
+      "imgSrc": "england-bowl-jr.--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "england-bowl-jr.--web.png",
+          "className": "pink-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Fancy bowl",
+      "imgSrc": "facny-bowl-2.5-ltr---web.png",
+      "sizes": ["2.5L"],
+      "colors": [
+        {
+          "imgSrc": "facny-bowl-2.5-ltr---web.png",
+          "className": "blue-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Fancy bowl ribs",
+      "imgSrc": "fancy-bowl-ribs--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "fancy-bowl-ribs--web.png",
+          "className": "blue-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Football bowl",
+      "imgSrc": "football-bowl---web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "football-bowl---web.png",
+          "className": "yellow-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "bowl",
+      "imgSrc": "IMG_20231028_152838-removebg-preview.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "IMG_20231028_152838-removebg-preview.png",
+          "className": "lime-yellow-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Oval bowl fancy",
+      "imgSrc": "oval-bowl-fancy-with-cover--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "oval-bowl-fancy-with-cover--web.png",
+          "className": "orange-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Party bowl",
+      "imgSrc": "party-bowl--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "party-bowl--web.png",
+          "className": "bright-green-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Pilot bowl",
+      "imgSrc": "pilot-bowl--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "pilot-bowl--web.png",
+          "className": "purple-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Ricky bowl",
+      "imgSrc": "ricky-bowl---web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "ricky-bowl---web.png",
+          "className": "turquoise-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Rose bowl",
+      "imgSrc": "rose-bowl--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "rose-bowl--web.png",
+          "className": "pink-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Salad bowl",
+      "imgSrc": "salad-bowl-stripe---web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "salad-bowl-stripe---web.png",
+          "className": "yellow-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Sanghai bowl",
+      "imgSrc": "sanghai-bowl-small-with-cover--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "sanghai-bowl-small-with-cover--web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Sugar bowl",
+      "imgSrc": "sugar-bowl---web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "sugar-bowl---web.png",
+          "className": "turquoise-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Super beach bowl",
+      "imgSrc": "super-beach-bowl---web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "super-beach-bowl---web.png",
+          "className": "dull-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Super star bowl",
+      "imgSrc": "super-star-bowl-1-ltr---web.png",
+      "sizes": ["1L"],
+      "colors": [
+        {
+          "imgSrc": "super-star-bowl-1-ltr---web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Tisco bowl",
+      "imgSrc": "tisco-bowl--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "tisco-bowl--web.png",
+          "className": "orange-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Tutty fruity bowl",
+      "imgSrc": "tutty-fruity-bowl---web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "tutty-fruity-bowl---web.png",
+          "className": "bright-green-swatch inner-shadow-dark"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Zigzag bowl",
+      "imgSrc": "zigzag-bowl---web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "zigzag-bowl---web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "bowls"
+    },
+    {
+      "name": "Zigzag bowl",
+      "imgSrc": "zigzag-bowl---web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "zigzag-bowl---web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "colanders+plates"
+    },
+    {
+      "name": "Cooler",
+      "imgSrc": "coolers0.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "coolers0.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        },
+        {
+          "imgSrc": "coolers6.png",
+          "className": "blue-swatch inner-shadow-light"
+        }
+      ],
+      "category": "coolers"
+    },
+    {
+      "name": "Drum",
+      "imgSrc": "img-20240319-151615--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "img-20240319-151615--web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        },
+        {
+          "imgSrc": "img-20240319-151645--web.png",
+          "className": "blue-swatch inner-shadow-light"
+        }
+      ],
+      "category": "drums"
+    },
+    {
+      "name": "Mug",
+      "imgSrc": "mug0--web.png",
+      "sizes": [],
+      "colors": [
+        {
+          "imgSrc": "mug0--web.png",
+          "className": "purple-swatch inner-shadow-light"
+        },
+        {
+          "imgSrc": "mug2--web.png",
+          "className": "orange-swatch inner-shadow-dark"
+        },
+        {
+          "imgSrc": "mug4--web.png",
+          "className": "bright-green-swatch inner-shadow-light"
+        }
+      ],
+      "category": "mugs+cups"
     }
   ]
 }

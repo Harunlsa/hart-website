@@ -2186,12 +2186,94 @@ section {
     color: #bcff33;
   }
 }
+
 #product-banner.coolers {
   background: url("../img/product-banners/banner-coolers.png") no-repeat center
     center;
   background-size: cover;
   .left-col h1 {
     color: #bb99ff;
+  }
+}
+
+#product-banner.basins {
+  background: url("../img/product-banners/banner-basins.png") no-repeat center
+    center;
+  background-size: cover;
+  .left-col h1 {
+    color: #c5b8e0;
+  }
+}
+
+#product-banner.baskets {
+  background: url("../img/product-banners/banner-baskets.png") no-repeat center
+    center;
+  background-size: cover;
+  .left-col h1 {
+    color: #81b347;
+  }
+}
+
+#product-banner.bowls {
+  background: url("../img/product-banners/banner-bowls.png") no-repeat center
+    center;
+  background-size: cover;
+  .left-col h1 {
+    color: #bcff33;
+  }
+}
+
+#product-banner.buckets {
+  background: url("../img/product-banners/banner-buckets.png") no-repeat center
+    center;
+  background-size: cover;
+  .left-col h1 {
+    color: #c5b8e0;
+  }
+}
+
+#product-banner.colanders-and-plates {
+  background: url("../img/product-banners/banner-colanders.png") no-repeat
+    center center;
+  background-size: cover;
+  .left-col h1 {
+    color: #ffff00;
+  }
+}
+
+#product-banner.coolers {
+  background: url("../img/product-banners/banner-coolers.png") no-repeat center
+    center;
+  background-size: cover;
+  .left-col h1 {
+    color: #bb99ff;
+  }
+}
+
+#product-banner.drums {
+  background: url("../img/product-banners/banner-drums.png") no-repeat center
+    center;
+  background-size: cover;
+  .left-col h1 {
+    color: #9ed1fa;
+  }
+}
+
+#product-banner.mugs-and-cups {
+  background: url("../img/product-banners/banner-mugs.png") no-repeat center
+    center;
+  background-size: cover;
+  .left-col h1 {
+    color: #df5d30;
+  }
+}
+
+#product-banner.toys {
+  background: url("../img/product-banners/banner-toys.png") no-repeat center
+    center;
+  background-size: cover;
+  .left-col h1 {
+    color: #b4ff33;
   }
 }
 
@@ -2346,8 +2428,14 @@ section {
 .bright-green-swatch {
   background-color: #83db0d;
 }
+.dull-green-swatch {
+  background-color: #00754e;
+}
 .yellow-swatch {
   background-color: #ffca05;
+}
+.olive-swatch {
+  background-color: #b3cb79;
 }
 .purple-swatch {
   background-color: #3d298d;
@@ -2376,6 +2464,15 @@ section {
 }
 .pink-swatch {
   background-color: #c55491;
+}
+.turquoise-swatch {
+  background-color: #007ba3;
+}
+.red-swatch {
+  background-color: #c92943;
+}
+.lime-yellow-swatch {
+  background-color: #b7c900;
 }
 
 /* Style for pagination */

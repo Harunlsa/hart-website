@@ -47,20 +47,20 @@
     <div id="header-placeholder"></div>
 
     <!-- ======= Banner ======= -->
-    <section id="product-banner" class="jerry-cans">
+    <section id="product-banner" class="mugs-and-cups">
       <div class="container">
         <div class="row h-100 align-items-center">
           <div class="col-md-7 left-col">
             <h1>Mugs and Cups</h1>
             <p>
-              Safe and sturdy jerry cans for transporting liquids, available in
-              various sizes to suit your needs.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
             </p>
           </div>
           <div class="col-md-5 right-col text-right">
             <img
-              src="../assets/img/portfolio/jerry-cans/jerry-can-group.png"
-              alt="Jerry Cans"
+              src="../assets/img/portfolio/mugs+cups/mugs-and-cups-group.png"
+              alt="Mugs and Cups"
               class="img-fluid"
             />
           </div>
@@ -151,7 +151,7 @@
     </script>
 
     <!-- load prodcuts -->
-    <script>
+    <script defer>
       document.addEventListener("DOMContentLoaded", function () {
         const basePath = "../assets/img/portfolio/";
         const productsContainer = document.getElementById("product-row");
@@ -159,7 +159,6 @@
           .split("/")
           .pop()
           .replace(".html", "");
-
         // Fetch products from JSON file
         fetch("/../products.json")
           .then((response) => response.json())
@@ -173,6 +172,9 @@
 
         function createProductCard({ name, imgSrc, sizes, colors }) {
           const card = document.createElement("div");
+          console.log("basePath:" + basePath);
+          console.log("currentCategory:" + currentCategory);
+          console.log("imgSrc:" + imgSrc);
           card.classList.add("col-sm-6", "col-md-4", "col-lg-3");
           card.innerHTML = `
       <div class="card">
